@@ -14,7 +14,7 @@ function draw() {
 
   var x
   var y
-  var s=2
+  var s=6
     // start off with a background
       background(200)
       strokeWeight(s)
@@ -80,6 +80,16 @@ function draw() {
   else if((x-426)>=.7*(y-100)&&(x-436)<=.7*(y-100)&&x<=436&&y>=40){
   stroke(180+int(random(100)),120+int(random(100)),50+int(random(100)))
   }
+  else if((x-384)>=2*(y-40)&&(x-394)<=2*(y-40)&&y<=40){
+  stroke(180+int(random(100)),120+int(random(100)),50+int(random(100)))
+  }
+  else if(x>=389&&x<=394&&y<=40){
+  stroke(180+int(random(100)),120+int(random(100)),50+int(random(100)))
+  }
+  else if(x-433<=-.5*(y-100)&&x-428>=-.5*(y-100)&&y<=100){
+  stroke(180+int(random(100)),120+int(random(100)),50+int(random(100)))
+  }
+
   //tree leaves
   else if(y<90+40*sin(4*x)&&x>=250){
     stroke(80+int(random(100)),200+int(random(100)),0+int(random(100)))
